@@ -11,7 +11,7 @@ public class NewTest {
 	    private WebDriver driver;		
 		@Test				
 		public void testEasy() {	
-			driver.get("http://10.117.77.105:8080/spring-mvc-showcase-1.0.0-RELEASE/");  
+			driver.get("http://54.255.203.220:8080/spring-mvc-showcase");  
 			String title = driver.getTitle();				 
 			Assert.assertTrue(title.contains("spring-mvc-showcase")); 		
 		}	
