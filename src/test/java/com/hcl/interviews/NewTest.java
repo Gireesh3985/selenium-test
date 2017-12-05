@@ -11,9 +11,9 @@ public class NewTest {
 	    private WebDriver driver;		
 		@Test				
 		public void testEasy() {	
-			driver.get("http://demo.guru99.com/selenium/guru99home/");  
+			driver.get("http://54.255.203.220:8080/spring-mvc-showcase/");  
 			String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
+			Assert.assertTrue(title.contains("spring-mvc-showcase")); 		
 		}	
 		@BeforeTest
 		public void beforeTest() {	
