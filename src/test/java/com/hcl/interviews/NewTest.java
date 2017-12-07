@@ -16,7 +16,8 @@ public class NewTest {
 			Assert.assertTrue(title.contains("spring-mvc-showcase")); 		
 		}	
 		@BeforeTest
-		public void beforeTest() {	
+		public void beforeTest() {
+		    System.setProperty("webdriver.gecko.driver","/home/ubuntu/geckodriver");
 		    driver = new FirefoxDriver();  
 		}		
 		@AfterTest
