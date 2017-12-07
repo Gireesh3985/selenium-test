@@ -17,7 +17,7 @@ public class NewTest {
 		}	
 		@BeforeTest
 		public void beforeTest() {
-		    System.setProperty("webdriver.gecko.driver","/home/ubuntu/geckodriver");
+		    //System.setProperty("webdriver.gecko.driver","/home/ubuntu/geckodriver");
 		    driver = new FirefoxDriver();  
 		}		
 		@AfterTest
