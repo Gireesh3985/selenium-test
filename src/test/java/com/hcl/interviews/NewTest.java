@@ -2,6 +2,7 @@ package com.hcl.interviews;
 
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;		
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;		
 import org.testng.Assert;		
 import org.testng.annotations.Test;	
@@ -17,8 +18,10 @@ public class NewTest {
 		}	
 		@BeforeTest
 		public void beforeTest() {
-		    System.setProperty("webdriver.gecko.driver","/home/ubuntu/geckodriver");
-		    driver = new FirefoxDriver();  
+		    //System.setProperty("webdriver.gecko.driver","/home/ubuntu/geckodriver");
+		    System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
+		    //driver = new FirefoxDriver();
+		    driver = new ChromeDriver();
 		}		
 		@AfterTest
 		public void afterTest() {
