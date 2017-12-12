@@ -11,9 +11,9 @@ public class NewTest {
 	    private WebDriver driver;		
 		@Test				
 		public void testEasy() {	
-			driver.get("http://13.229.91.19:8080/spring-mvc-showcase");  
+			driver.get("http://www.google.com");  
 			String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("spring-mvc-showcase")); 		
+			Assert.assertTrue(title.contains("Google")); 		
 		}	
 		@BeforeTest
 		public void beforeTest() {
