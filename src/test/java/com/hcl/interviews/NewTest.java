@@ -19,7 +19,7 @@ public class NewTest {
 		@BeforeTest
 		public void beforeTest() {
 		    //System.setProperty("webdriver.gecko.driver","/home/ubuntu/geckodriver");
-		    System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
+		    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 		    //driver = new FirefoxDriver();
 		    driver = new ChromeDriver();
 		}		
